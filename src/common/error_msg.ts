@@ -1,0 +1,7 @@
+export const FETCH_HAS_TIMEOUT = '请求超时'
+export const BAD_INPUT = '无效的输入'
+export const LOADING_PLEASE_WAIT = '加载中请稍后'
+export const SAVING_PLEASE_WAIT = '保存中请稍后'
+export const BAD_FETCH_JSON_DATA = '无效的返回结果'
+export const DUPLICATED_INPUT_NAME = '重复的名称'
+export const NO_PRIVLEGE = '没有权限'
