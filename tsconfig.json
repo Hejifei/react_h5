@@ -22,5 +22,6 @@
   },
   "include": [
     "src"
-, "typings"  ]
+, "typings"  ],
+  "extends": "./paths.json",
 }

@@ -6,8 +6,8 @@ import {useDispatch, useSelector} from 'react-redux'
 import {
   incremented,
   decremented,
-} from './model/counter'
-import styles from  './index.module.scss'
+} from '@/model/counter'
+import styles from './index.module.less'
 
 import { COUNTER_REDUCER_FEATURE_KEY } from './model/counter';
 
@@ -80,4 +80,4 @@ function About() {
   );
 }
 
-export default App;
+export default App
