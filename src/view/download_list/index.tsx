@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import HrefAndInfo from './href_and_info'
 import GoodweIcon from './goodwe.png'
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"
+import restfulFetch from '@/utils/request'
 import {RightOutline, TextOutline} from 'antd-mobile-icons'
 
 const DownloadList = () => {
+  useEffect(() => {
+    const getInitData = async () => {
+      await restfulFetch({
+        url: '/api/Account/CrossLogin',
+        data: {
+          account: "18013488032",
+          password: "gooodwefanfan66",
+        }
+      })
+    }
+    getInitData()
+
+  }, [])
 
   return <div className="bg-blue-50 min-h-screen p-5">
     <HrefAndInfo

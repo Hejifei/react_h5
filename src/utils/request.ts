@@ -46,7 +46,11 @@ export const restfulFetch = async ({
           delete headers[CONTENT_TYPE]
         }
     }
-
+    // 默认token
+    //  @ts-ignore
+    headers.token = JSON.stringify({
+      "uid": "","timestamp": 0,"token": "","client": "android","version": "","language": "zh"
+    })
     const fetchOption: any = {
         method,
         headers,
