@@ -21,7 +21,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-, "typings"  ],
-  "extends": "./paths.json",
+    "src",
+    "typings"
+  ],
+  "extends": "./paths.json"
 }

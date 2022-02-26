@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-top: 10px;
+  width: 375px;
+  background-color: green;
+}
+
+.content {
+  width: 187.5px;
+  background-color: orange;
+  height: 10px;
+}
+
+.wrapper2 {
+  margin-top: 10px;
+  width: 100vw;
+  background-color: green;
+}
+
+.content2 {
+  width: 50vw;
+  background-color: orange;
+  height: 10px;
+}

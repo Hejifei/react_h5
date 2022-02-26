@@ -7,7 +7,8 @@ import {
   incremented,
   decremented,
 } from '@/model/counter'
-import styles from './index.module.less'
+import styles from './index.module.scss'
+import './App.css'
 
 import { COUNTER_REDUCER_FEATURE_KEY } from './model/counter';
 
@@ -32,6 +33,15 @@ function App() {
       </div> 
       <div className={styles.contentWrapper} >
         <div className={styles.centerWrapper}></div>
+      </div>
+      <h1 className="flex text-3xl font-bold underline text-blue-600">
+          Hello world!
+      </h1>
+      <div className='wrapper'>
+        <div className='content'></div>
+      </div>
+      <div className='wrapper2'>
+        <div className='content2'></div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
