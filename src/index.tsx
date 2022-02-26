@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
+import {DotLoading} from 'antd-mobile'
 import store from './store'
+import routes from "@/router";
 import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <App />
+        <Suspense fallback={<div className="bg-blue-50 min-h-screen"><DotLoading /></div>}>
+          {routes}  
+        </Suspense>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,

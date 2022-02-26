@@ -1,16 +1,16 @@
 import {Translation} from 'react-i18next'
-import {Routes, Route, Link} from "react-router-dom";
-import React, {useState, useCallback} from 'react'
-import i18n from './react-i18next-config'
+import {Link} from "react-router-dom";
+import {useState, useCallback} from 'react'
+import i18n from '../../react-i18next-config'
 import {useDispatch, useSelector} from 'react-redux'
 import {
   incremented,
   decremented,
 } from '@/model/counter'
 import styles from './index.module.scss'
-import './App.css'
+import './index.css'
 
-import { COUNTER_REDUCER_FEATURE_KEY } from './model/counter';
+import { COUNTER_REDUCER_FEATURE_KEY } from '../../model/counter';
 
 function App() {
   const [language, setLanguage] = useState(i18n.language)
@@ -43,10 +43,7 @@ function App() {
       <div className='wrapper2'>
         <div className='content2'></div>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Routes>
+      <Home />
     </div>
   );
 }
@@ -68,23 +65,6 @@ function Home() {
       </div>
       <nav>
         <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
       </nav>
     </>
   );
