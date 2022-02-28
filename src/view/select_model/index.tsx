@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
-import GoodweIcon from '../download_list/goodwe.png'
 import ModelSelectList from './model_select_list'
+import EnginvIcon from './img/enginv.png'
+import GridinvIcon from './img/gridinv.png'
 
 interface IProps {
 }
@@ -12,11 +13,11 @@ const SelectModel: React.FC<IProps> = () => {
   }, [])
 
   return <div className="bg-blue-50 min-h-screen p-5">
-    <div className="flex items-center text-gray-500 text-sm">
+    <div className="flex items-center text-gray-500 text-xs">
       <img
         alt={''}
-        src={GoodweIcon}
-        className="w-5 h-auto mr-3"
+        src={GridinvIcon}
+        className="w-4 h-auto mr-2"
       />
       Grid-Connected Inverters
     </div>
@@ -32,11 +33,11 @@ const SelectModel: React.FC<IProps> = () => {
         {id: '7', name: 'XS'},
       ]}
     />
-    <div className="flex items-center text-gray-500 text-sm mt-10">
+    <div className="flex items-center text-gray-500 text-xs mt-10">
       <img
         alt={''}
-        src={GoodweIcon}
-        className="w-5 h-auto mr-3"
+        src={EnginvIcon}
+        className="w-4 h-auto mr-2"
       />
       Energy Storage Inverters
     </div>

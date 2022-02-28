@@ -17,7 +17,8 @@ const ModelSelectList: React.FC<IProps> = ({
       <Link
         key={id}
         to={`/model_detail/${id}`}
-        className="flex items-center bg-white rounded-lg text-center text-xl mb-4 shadow-md w-5/12 h-16 px-7 justify-center leading-6"
+        style={{color: '#3D3F58 '}}
+        className="flex items-center bg-white rounded-lg text-center text-lg mb-4 shadow-md w-5/12 h-16 px-7 justify-center leading-6 font-semibold"
       >
         {name} 
       </Link>
